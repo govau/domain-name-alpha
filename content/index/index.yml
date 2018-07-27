@@ -1,0 +1,11 @@
+pagetitle: Homepage
+header:
+  - /_shared/header-govau.md
+  - /_shared/header.md
+main:
+  - body.md
+sidebar:
+  - new-domains.md
+  - manage-domains.md
+footer:
+  - /_shared/footer.md

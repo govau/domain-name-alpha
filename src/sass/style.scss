@@ -1,0 +1,48 @@
+// colors up here
+
+/**
+ * Colors light theme
+ */
+$AU-color-foreground-text:       #414141;
+$AU-color-foreground-action:     #007099;
+$AU-color-background:            #ffffff;
+
+
+/**
+ * Colors dark theme
+ */
+$AU-colordark-foreground-text:   #ffffff;
+$AU-colordark-background:        #313131;
+$AU-colordark-foreground-action: #45c2f0;
+
+$AU-color-success-a11y:          #09875E;
+
+@import "_uikit";
+@import "_header-govau";
+
+// custom css here
+
+.au-link-list {
+	list-style-type: none;
+}
+
+.container-fluid {
+	@include AU-space( max-width, 70unit );
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	@include AU-space( padding, 3unit 0 );
+}
+
+footer .au-link-list li {
+	@include AU-space( margin-right, 2unit );
+}
+
+[class^="col-"] + [class^="col-"] {
+    @include AU-space( margin-top, 2unit );
+}
