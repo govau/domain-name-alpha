@@ -1,0 +1,120 @@
+{
+	"name": "design-system-starter",
+	"version": "1.1.1",
+	"description": "The Australian Government Design System Starter Pack",
+	"scripts": {
+		"build:autoprefix": "postcss docs/css/main.css -u autoprefixer -r",
+		"build:css": "node-sass --output-style compressed \"./src/sass/main.scss\" \"./docs/css/main.css\"",
+		"build:css:dev": "node-sass --output-style compact --source-map true \"./src/sass/main.scss\" \"./docs/css/main.css\"",
+		"build": "npm run build:css && npm run build:autoprefix",
+		"watch:sass": "onchange \"./src/sass/main.scss\" -- npm run build:css:dev && npm run build:autoprefix",
+		"serve": "browser-sync start --server ./docs -w --files \"./docs/index.html\" \"./docs/css/main.css\" \"./docs/js/script.js\"",
+		"watch": "npm run build && npm-run-all --parallel serve watch:sass"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/govau/design-system-starter.git"
+	},
+	"author": {
+		"name": "Commonwealth of Australia, DTA",
+		"email": "guides@digital.gov.au",
+		"url": "https://www.dta.gov.au/"
+	},
+	"contributors": [
+		{
+			"name": "Dominik Wilkowski",
+			"email": "hi@dominik-wilkowski.com",
+			"url": "https://dominik-wilkowski.com/"
+		},
+		{
+			"name": "Alex Page",
+			"email": "alex@alexpage.com.au",
+			"url": "http://alexpage.com.au"
+		},
+		{
+			"name": "Patrick De Young",
+			"email": "hello@patrickdeyoung.me",
+			"url": "https://patrickdeyoung.me"
+		},
+		{
+			"name": "Sukhraj Ghuman",
+			"email": "sukhrajghuman@live.com",
+			"url": "https://github.com/sukhrajghuman"
+		}
+	],
+	"license": "MIT",
+	"devDependencies": {
+		"browser-sync": "^2.26.3",
+		"npm-run-all": "^4.1.5",
+		"onchange": "^4.1.0"
+	},
+	"dependencies": {
+		"@gov.au/accordion": "latest",
+		"@gov.au/animate": "latest",
+		"@gov.au/body": "latest",
+		"@gov.au/breadcrumbs": "latest",
+		"@gov.au/buttons": "latest",
+		"@gov.au/callout": "latest",
+		"@gov.au/control-input": "latest",
+		"@gov.au/core": "latest",
+		"@gov.au/cta-link": "latest",
+		"@gov.au/direction-links": "latest",
+		"@gov.au/footer": "latest",
+		"@gov.au/grid-12": "latest",
+		"@gov.au/header": "latest",
+		"@gov.au/headings": "latest",
+		"@gov.au/inpage-nav": "latest",
+		"@gov.au/keyword-list": "latest",
+		"@gov.au/link-list": "latest",
+		"@gov.au/main-nav": "latest",
+		"@gov.au/page-alerts": "latest",
+		"@gov.au/progress-indicator": "latest",
+		"@gov.au/responsive-media": "latest",
+		"@gov.au/select": "latest",
+		"@gov.au/side-nav": "latest",
+		"@gov.au/skip-link": "latest",
+		"@gov.au/tags": "latest",
+		"@gov.au/text-inputs": "latest",
+		"autoprefixer": "^9.4.7",
+		"node-sass": "^4.11.0",
+		"on-change": "^1.0.0",
+		"postcss-cli": "^6.1.1"
+	},
+	"pancake": {
+		"auto-save": true,
+		"plugins": true,
+		"ignore": [
+			"@gov.au/pancake-react",
+			"@gov.au/pancake-json"
+		],
+		"css": {
+			"minified": true,
+			"modules": false,
+			"browsers": [
+				"last 2 versions",
+				"ie 8",
+				"ie 9",
+				"ie 10"
+			],
+			"location": false,
+			"name": false
+		},
+		"sass": {
+			"modules": false,
+			"location": "src/sass/",
+			"name": "_auds.scss"
+		},
+		"js": {
+			"minified": true,
+			"modules": false,
+			"location": "docs/js/",
+			"name": "script.min.js"
+		}
+	},
+	"browserslist": [
+		"last 2 versions",
+		"ie 8",
+		"ie 9",
+		"ie 10"
+	]
+}
