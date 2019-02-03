@@ -1,45 +1,7 @@
-Australian Government Design System
+DNA Website Mockup
 ==========================
 
-> Get started with full page templates using the Australian Government Design System.
-
-## Templates
-
-Browse full page templates using the Australian Government Design System.
-
-- [Home page](https://govau.github.io/design-system-starter/)
-- [Basic page](https://govau.github.io/design-system-starter/basic)
-- [Form page](https://govau.github.io/design-system-starter/form)
-
-
-## Development environment
-
-Clone this repository to create a local development environment and start modifying the templates.
-
-* [Get started](#get-started)
-* [How it works](#how-it-works)
-* [Contributing](#contributing)
-* [License](#license)
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-## Get started
-
-The starter pack uses npm (node package manager) to set up a local development environment and install the Design System components. The default package manager for Node is npm. When you download Node, npm comes pre-installed.
-
-1. Make sure you have npm and Node installed on your computer. You can follow the [npm instructions](https://www.npmjs.com/get-npm) if you are unsure.
-
-1. Download, clone, or fork this repository into a folder on your computer.
-
-1. In the command line go into this folder and run `npm install`. This will install dependencies necessary for the local development environment.
-
-1. You should now be ready to start your local server by running `npm run watch`. This will watch for changes on `*.scss` files, create new `*.css` files and refresh the browser.
-
-
-**[⬆ back to top](#contents)**
-
+> This is a prototype of the DNA website
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
