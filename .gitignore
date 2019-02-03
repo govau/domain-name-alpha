@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+.sass-cache
+_auds.scss
+docs/css/main.css.map
+.idea
