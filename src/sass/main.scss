@@ -1,17 +1,16 @@
 // Dark theme overrides
- $AU-colordark-foreground-text:   #ffffff;
- $AU-colordark-foreground-action: #ffffff;
- $AU-colordark-foreground-focus:  #e3e7ea;
- $AU-colordark-background:        #3c4858;
+$AU-colordark-foreground-text: #ffffff;
+$AU-colordark-foreground-action: #45c2f0;
+$AU-colordark-foreground-focus: #e3e7ea;
+$AU-colordark-background: #3c4858;
 
 // Light theme overrides
- $AU-color-foreground-action: #3c4858;
- $AU-color-foreground-focus:  #ffffff;
+$AU-color-foreground-action: #3c4858;
+$AU-color-foreground-focus: #ffffff;
 //Main nav, set project specific breakpoint
 $AU-main-nav-breakpoint: sm;
 
 $AU-logo-width-sm: 16unit;
-
 
 
 // UI-Kit
@@ -20,168 +19,226 @@ $AU-logo-width-sm: 16unit;
 
 // Reset the body
 body {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 
 // Increase the spacing for au-body elements inside main
 main > .au-body {
-	@include AU-space( padding, 2unit 0 );
+  @include AU-space(padding, 2unit 0);
 
-	@include AU-media( sm ) {
-		@include AU-space( padding, 4unit 0 );
-	}
+  @include AU-media(sm) {
+	@include AU-space(padding, 4unit 0);
+  }
 }
 
 
 // Slight grid changes for container fluid
 .au-grid .container-fluid {
-	@include AU-space( max-width, 80unit );
+  @include AU-space(max-width, 80unit);
 
-	@include AU-media( sm ){
-		@include AU-space( padding-left, 2unit );
-		@include AU-space( padding-right, 2unit );
-	}
+  @include AU-media(sm) {
+	@include AU-space(padding-left, 2unit);
+	@include AU-space(padding-right, 2unit);
+  }
 }
 
 // Increase spacing between inline list items in footer
 .au-footer .au-link-list--inline li {
-	@include AU-space( padding-right, 1unit );
+  @include AU-space(padding-right, 1unit);
 }
 
 // The call to actions on the home page
 .btn-cta-group {
-	@include AU-space( margin-top, 1unit );
+  @include AU-space(margin-top, 1unit);
 
-	.au-btn {
-		@include AU-space( margin-top, 1unit );
-	}
+  .au-btn {
+	@include AU-space(margin-top, 1unit);
+  }
 }
 
 
 // Home page highlighted spacing on mobile
 .highlighted-section .col-sm-4 + .col-sm-4 {
-	@include AU-space( margin-top, 4unit );
+  @include AU-space(margin-top, 4unit);
 
-	@include AU-media( sm ) {
-		margin-top: 0;
-	}
+  @include AU-media(sm) {
+	margin-top: 0;
+  }
 }
 
 
 // Mobile side nav spacing
 .au-side-nav {
-	@include AU-space( margin-bottom, 2unit );
+  @include AU-space(margin-bottom, 2unit);
 
-	@include AU-media( sm ){
-		margin-bottom: 0;
-	}
+  @include AU-media(sm) {
+	margin-bottom: 0;
+  }
 }
 
 form {
-	@include AU-space( margin-top, 2unit );
+  @include AU-space(margin-top, 2unit);
 
-	label + input,
-	label + textarea {
-		@include AU-space( margin-top, .5unit );
-	}
+  label + input,
+  label + textarea {
+	@include AU-space(margin-top, .5unit);
+  }
 }
 
 .form-item + .form-item {
-	@include AU-space( margin-top, 2.5unit );
+  @include AU-space(margin-top, 2.5unit);
 }
 
 
 .form-required {
-	color: $AU-color-foreground-muted;
+  color: $AU-color-foreground-muted;
 }
 
 
 .label--block {
-	display: block;
+  display: block;
 }
 
 // Reset empty required values
 .empty-required {
 
-	// Text inputs and text areas
-	&.au-text-input:invalid,
-	&.au-text-input.au-text-input--dark:invalid, {
-		background: transparent;
-		border-color: $AU-color-foreground-border;
-	}
+  // Text inputs and text areas
+  &.au-text-input:invalid,
+  &.au-text-input.au-text-input--dark:invalid, {
+	background: transparent;
+	border-color: $AU-color-foreground-border;
+  }
 
-	// Radio buttons and control inputs
-	&.au-control-input__input:invalid + .au-control-input__text, {
-		background:transparent;
-	}
+  // Radio buttons and control inputs
+  &.au-control-input__input:invalid + .au-control-input__text, {
+	background: transparent;
+  }
 
-	&.au-control-input__input:invalid + .au-control-input__text:after{
-		border-color: transparent;
-	}
+  &.au-control-input__input:invalid + .au-control-input__text:after {
+	border-color: transparent;
+  }
 }
-
 
 footer {
 
-  nav  + div{
-	@include AU-space( margin-top, 1unit );
+  nav + div {
+	@include AU-space(margin-top, 1unit);
 
-	@include AU-media( md ) {
+	@include AU-media(md) {
+	  margin-top: 0;
+	}
+  }
+}
+
+.au-register-mobile {
+
+  .col-sm-3 + .col-sm-3 {
+	@include AU-space(margin-top, 4unit);
+  }
+
+
+  @include AU-media( sm ) {
+	.col-sm-3 + .col-sm-3 {
+	  margin-top: 0;
+	}
+
+  }
+
+}
+
+.au-who-mobile {
+
+  .col-md-6 + .col-md-6 {
+	@include AU-space(margin-top, 1unit);
+
+	@include AU-media(md) {
+	  margin-top: 0;
+	  margin-bottom: 0;
+	}
+  }
+}
+
+.au-header {
+  [class^="col-md"] + [class^="col-md"] {
+	@include AU-space( margin-top, 1.5unit );
+  }
+
+  @include AU-media( md ) {
+	[class^="col-md"] + [class^="col-md"] {
+	  margin-top: 0;
+	}
+  }
+}
+
+.au-header-padding {
+
+  @include AU-media(md) {
+	padding-bottom: 0;
+
+  }
+}
+
+.au-mobile-search {
+  .au-btn {
+	@include AU-space(margin-top, 1unit);
+
+	@media (min-width: 338px) {
 	  margin-top: 0;
 	}
   }
 }
 
 
+.au-mobile-search{
+  label{
+	@include AU-space(margin-bottom, 1.5unit);
+  }
+
+  @include AU-media( md ) {
+	label {
+	  margin-top: 0;
+	}
+  }
+}
+
 .au-register-mobile{
+  h2{
+	@include AU-space(margin-bottom, 1.5unit);
+  }
+}
 
-  .col-sm-3  + .col-sm-3 {
-	@include AU-space( margin-top, 1unit );
+.au-mobile{
+  h2 + p + p{
+	@include AU-space(margin-bottom, 1.5unit);
+  }
 
-	@include AU-media( md ) {
-	  margin-top: 2rem;
+  @include AU-media( md ) {
+	h2 + p + p {
+	  margin-bottom: 0;
 	}
   }
 
 }
 
-.au-who-mobile{
-
-.col-md-6 + .col-md-6 {
-	@include AU-space( margin-top, 1unit );
-
-	@include AU-media( md ) {
-	  margin-top: 1rem;
-	  margin-bottom: 1rem;
-	}
-  }
-
-  .au-header-mobile {
-
-	.col-md-6 + .col-md-6 {
-	  @include AU-space(margin-top, 1unit);
-
-	  @include AU-media(md) {
-		margin-top: 1rem;
-
-	  }
-	}
-  }
-}
-
-
-.au-header-padding{
-
-
-  header {
+.subscribe-mobile{
+  .au-btn{
 	@include AU-space(margin-top, 1unit);
-
-	@include AU-media(md) {
-	  padding-bottom: 0.5rem;
-
-	}
   }
 
+  @media (min-width: 338px) {
+	margin-top: 0;
+  }
 }
+
+
+.login-mobile{
+  float: right;
+
+
+  @media (max-width: 600px) {
+	float: none;
+  }
+}
+

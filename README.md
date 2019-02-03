@@ -1,4 +1,4 @@
-Australian Government Design System - Starter
+Australian Government Design System
 ==========================
 
 > Get started with full page templates using the Australian Government Design System.

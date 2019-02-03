@@ -78,7 +78,8 @@
 		"autoprefixer": "^9.4.7",
 		"node-sass": "^4.11.0",
 		"on-change": "^1.0.0",
-		"postcss-cli": "^6.1.1"
+		"postcss-cli": "^6.1.1",
+		"yarn": "^1.13.0"
 	},
 	"pancake": {
 		"auto-save": true,
