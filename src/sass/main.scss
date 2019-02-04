@@ -120,11 +120,14 @@ section {
 
 
 .dna-search-input {
-	@include AU-space( margin-bottom, 1unit );
 
-	@media ( min-width: 338px ) {
+  width:75%;
+
+	@media ( min-width: 320px ) {
 	  margin-bottom: 0;
+      width: 62%;
 	}
+
 
 }
 
@@ -141,3 +144,6 @@ section {
 
 }
 
+.form-item + .form-item {
+  @include AU-space( margin-top, 2.5unit );
+}
