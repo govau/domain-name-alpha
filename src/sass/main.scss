@@ -59,67 +59,10 @@ main > .au-body {
 }
 
 
-// Home page highlighted spacing on mobile
-.highlighted-section .col-sm-4 + .col-sm-4 {
-  @include AU-space(margin-top, 4unit);
-
-  @include AU-media(sm) {
-	margin-top: 0;
-  }
-}
-
-
-// Mobile side nav spacing
-.au-side-nav {
-  @include AU-space(margin-bottom, 2unit);
-
-  @include AU-media(sm) {
-	margin-bottom: 0;
-  }
-}
-
-form {
-  @include AU-space(margin-top, 2unit);
-
-  label + input,
-  label + textarea {
-	@include AU-space(margin-top, .5unit);
-  }
-}
-
-.form-item + .form-item {
-  @include AU-space(margin-top, 2.5unit);
-}
-
-
-.form-required {
-  color: $AU-color-foreground-muted;
-}
-
-
 .label--block {
   display: block;
 }
 
-// Reset empty required values
-.empty-required {
-
-  // Text inputs and text areas
-  &.au-text-input:invalid,
-  &.au-text-input.au-text-input--dark:invalid, {
-	background: transparent;
-	border-color: $AU-color-foreground-border;
-  }
-
-  // Radio buttons and control inputs
-  &.au-control-input__input:invalid + .au-control-input__text, {
-	background: transparent;
-  }
-
-  &.au-control-input__input:invalid + .au-control-input__text:after {
-	border-color: transparent;
-  }
-}
 
 footer {
 
@@ -132,10 +75,11 @@ footer {
   }
 }
 
-.au-register-mobile {
+
+.register-banner {
 
   .col-sm-3 + .col-sm-3 {
-	@include AU-space(margin-top, 4unit);
+	@include AU-space( margin-top, 4unit );
   }
 
 
@@ -143,22 +87,22 @@ footer {
 	.col-sm-3 + .col-sm-3 {
 	  margin-top: 0;
 	}
-
   }
 
 }
 
-.au-who-mobile {
+
+section {
 
   .col-md-6 + .col-md-6 {
 	@include AU-space(margin-top, 1unit);
 
 	@include AU-media(md) {
 	  margin-top: 0;
-	  margin-bottom: 0;
 	}
   }
 }
+
 
 .au-header {
   [class^="col-md"] + [class^="col-md"] {
@@ -169,76 +113,31 @@ footer {
 	[class^="col-md"] + [class^="col-md"] {
 	  margin-top: 0;
 	}
-  }
-}
-
-.au-header-padding {
-
-  @include AU-media(md) {
-	padding-bottom: 0;
-
-  }
-}
-
-.au-mobile-search {
-  .au-btn {
-	@include AU-space(margin-top, 1unit);
-
-	@media (min-width: 338px) {
-	  margin-top: 0;
-	}
+    padding-bottom: 0;
   }
 }
 
 
-.au-mobile-search{
-  label{
-	@include AU-space(margin-bottom, 1.5unit);
-  }
 
-  @include AU-media( md ) {
-	label {
-	  margin-top: 0;
-	}
-  }
-}
+.dna-search-input {
+	@include AU-space( margin-bottom, 1unit );
 
-.au-register-mobile{
-  h2{
-	@include AU-space(margin-bottom, 1.5unit);
-  }
-}
-
-.au-mobile{
-  h2 + p + p{
-	@include AU-space(margin-bottom, 1.5unit);
-  }
-
-  @include AU-media( md ) {
-	h2 + p + p {
+	@media ( min-width: 338px ) {
 	  margin-bottom: 0;
 	}
-  }
 
 }
 
-.subscribe-mobile{
-  .au-btn{
-	@include AU-space(margin-top, 1unit);
-  }
 
-  @media (min-width: 338px) {
-	margin-top: 0;
-  }
+.label--large {
+	@include AU-space( margin-bottom, 1.5unit );
 }
 
+.login-button {
 
-.login-mobile{
-  float: right;
-
-
-  @media (max-width: 600px) {
-	float: none;
+  @include AU-media(  sm ) {
+    float: right;
   }
+
 }
 

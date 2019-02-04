@@ -50,7 +50,7 @@
 </nav>
 
 <!-- HEADER -->
-<header class="au-header au-header--dark au-header-padding" role="banner">
+<header class="au-header au-header--dark" role="banner">
 	<div class="container-fluid">
 		<div class="row ">
 			<div class="col-md-8">
@@ -66,7 +66,7 @@
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a class="au-btn  au-btn--dark au-btn--secondary login-mobile">Log in</a>
+				<a class="au-btn  au-btn--dark au-btn--secondary login-button">Log in</a>
 			</div>
 		</div>
 	</div>
@@ -116,17 +116,17 @@
 	<!--CONTENT-->
 	<div class="container-fluid au-body">
 		<div class="row">
-			<div class="col-md-12 au-mobile-search">
-				<label class="label--block au-display-xl" for="search-text-input-block">Register for a domain name</label>
-				<input class="au-text-input " name="search-text-input-block" id="search-text-input-block"
-					   type="text" value=" ">
+			<div class="col-md-12">
+				<label class="label--large au-display-xl" for="search-text-input">Register for a domain name</label>
+				<input class="au-text-input dna-search-input" name="search-text-input" id="search-text-input"
+					   type="text">
 				<button class="au-btn" type="submit">Search</button>
 				<p class="au-display-lg">Have you checked the goverment domain <a href="#"> policy & guidelines</a></p>
 			</div>
 
 		</div>
 	</div>
-	<div class="au-body au-body--alt au-register-mobile">
+	<div class="au-body au-body--alt register-banner">
 		<div class="container-fluid ">
 			<h2 class="au-display-xl">Registering a new domain name</h2>
 			<div class="row ">
@@ -166,7 +166,7 @@
 		</div>
 	</div>
 	</div>
-	<section class="au-body au-who-mobile">
+	<section class="au-body ">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
@@ -243,11 +243,18 @@
 				</ul>
 			</nav>
 
-			<div class="col-md-12 col-xs-6">
-				<label class="label--block" for="email-text-input">Get our newsletter</label>
-				<input class="au-text-input" name="email-text-input" id="email-text-input"
-					   type="text" placeholder="Enter your email">
-				<button type="submit" class="au-btn  subscribe-mobile au-btn--dark au-btn--secondary">Subscribe</button>
+			<div class="col-md-6 col-xs-12">
+				<form>
+					<div class="form-item">
+						<label class="label--block" for="email-text-input">Get our newsletter</label>
+						<input class="au-text-input" name="email-text-input" id="email-text-input"
+							   type="text" placeholder="Enter your email">
+					</div>
+					<div class="form-item">
+						<button type="submit" class="au-btn au-btn--dark au-btn--secondary">Subscribe
+						</button>
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="row">
