@@ -144,6 +144,16 @@ section {
 
 }
 
-.form-item + .form-item {
-  @include AU-space( margin-top, 2.5unit );
+
+.form-item{
+  button {
+    @include AU-space(margin-top, 1unit);
+  }
+
+  @media ( min-width: 338px )  {
+    button {
+      margin-top: 0;
+    }
+  }
 }
+

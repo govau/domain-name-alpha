@@ -1564,6 +1564,8 @@ section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 
 @media (min-width: 768px) { .login-button { float: right; } }
 
-.form-item + .form-item { margin-top: 40px; margin-top: 2.5rem; }
+.form-item button { margin-top: 16px; margin-top: 1rem; }
+
+@media (min-width: 338px) { .form-item button { margin-top: 0; } }
 
 /*# sourceMappingURL=main.css.map */
