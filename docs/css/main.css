@@ -1558,7 +1558,7 @@ section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 
 .dna-search-input { width: 75%; }
 
-@media (min-width: 320px) { .dna-search-input { margin-bottom: 0; width: 62%; } }
+@media (min-width: 338px) { .dna-search-input { margin-bottom: 0; width: 62%; } }
 
 .label--large { margin-bottom: 24px; margin-bottom: 1.5rem; }
 
