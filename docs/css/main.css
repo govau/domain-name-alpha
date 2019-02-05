@@ -1543,9 +1543,16 @@ footer nav + div { margin-top: 16px; margin-top: 1rem; }
 
 @media (min-width: 992px) { footer nav + div { margin-top: 0; } }
 
-.register-banner .col-sm-3 + .col-sm-3 { margin-top: 64px; margin-top: 4rem; }
+.register-banner h2 { margin-bottom: 32px; margin-bottom: 2rem; }
 
-@media (min-width: 768px) { .register-banner .col-sm-3 + .col-sm-3 { margin-top: 0; } }
+.register-banner img { width: 100px; }
+
+.register-banner .col-md-3 + .col-md-3 { margin-top: 32px; margin-top: 2rem; }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { .register-banner .col-md-3 + .col-md-3 + .col-md-3 { margin-top: 32px; margin-top: 2rem; }
+  .register-banner .col-md-3 + .col-md-3 { margin-top: 0; } }
+
+@media (min-width: 992px) { .register-banner .col-md-3 + .col-md-3 { margin-top: 0; } }
 
 section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 
@@ -1556,7 +1563,7 @@ section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 @media (min-width: 992px) { .au-header { padding-bottom: 0; }
   .au-header [class^="col-md"] + [class^="col-md"] { margin-top: 0; } }
 
-.dna-search-input { width: 75%; }
+.dna-search-input { margin-bottom: 16px; margin-bottom: 1rem; width: 75%; }
 
 @media (min-width: 338px) { .dna-search-input { margin-bottom: 0; width: 62%; } }
 
@@ -1567,5 +1574,16 @@ section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 .form-item button { margin-top: 16px; margin-top: 1rem; }
 
 @media (min-width: 338px) { .form-item button { margin-top: 0; } }
+
+.au-card { background: #ffffff; padding: 16px; padding: 1rem; border-radius: 4px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.au-card__image { text-align: center; }
+
+@media (min-width: 768px) { .card-list { display: flex; flex-wrap: wrap; }
+  .card-list div[class^="col-"] { display: flex; } }
+
+.card-list h3 { text-align: center; }
+
+.center-image { text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

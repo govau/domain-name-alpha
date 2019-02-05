@@ -78,16 +78,35 @@ footer {
 
 .register-banner {
 
-  .col-sm-3 + .col-sm-3 {
-	@include AU-space( margin-top, 4unit );
+  h2 {
+    @include AU-space( margin-bottom, 2unit );
+  }
+
+  img {
+    width:100px;
+
+  }
+
+  .col-md-3 + .col-md-3  {
+	@include AU-space( margin-top, 2unit );
   }
 
 
-  @include AU-media( sm ) {
-	.col-sm-3 + .col-sm-3 {
-	  margin-top: 0;
-	}
+  @media screen and (min-width: 768px) and (max-width: 991px)  {
+    .col-md-3 + .col-md-3 + .col-md-3 {
+      @include AU-space( margin-top, 2unit );
+    }
+    .col-md-3 + .col-md-3  {
+     margin-top: 0;
+    }
   }
+
+  @include AU-media( md ) {
+    .col-md-3 + .col-md-3  {
+       margin-top: 0 ;
+    }
+  }
+
 
 }
 
@@ -120,7 +139,7 @@ section {
 
 
 .dna-search-input {
-
+  @include AU-space( margin-bottom, 1unit );
   width:75%;
 
 	@media ( min-width: 338px ) {
@@ -145,7 +164,7 @@ section {
 }
 
 
-.form-item{
+.form-item {
   button {
     @include AU-space(margin-top, 1unit);
   }
@@ -157,3 +176,38 @@ section {
   }
 }
 
+
+.au-card {
+  background: $AU-color-background;
+  @include AU-space( padding, 1unit );
+  border-radius: $AU-border-radius;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  &__image {
+    text-align: center;
+  }
+}
+
+
+.card-list {
+
+  @include AU-media( sm ) {
+    display: flex;
+    flex-wrap: wrap;
+
+    div[ class^="col-" ] {
+      display: flex;
+    }
+  }
+
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.center-image {
+
+  text-align: center;
+
+}
