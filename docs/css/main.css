@@ -1577,7 +1577,7 @@ section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 
 .au-card { background: #ffffff; padding: 16px; padding: 1rem; border-radius: 4px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
-.au-card__image { text-align: center; }
+.au-card__image { text-align: center; margin-top: 1.5rem; }
 
 @media (min-width: 768px) { .card-list { display: flex; flex-wrap: wrap; }
   .card-list div[class^="col-"] { display: flex; } }
