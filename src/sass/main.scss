@@ -184,6 +184,7 @@ section {
 
   &__image {
     text-align: center;
+    @include AU-space( margin-top, 1unit );
   }
 }
 
