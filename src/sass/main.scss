@@ -166,14 +166,13 @@ section {
 
 .form-item {
   button {
-    @include AU-space(margin-top, 1unit);
-  }
+    @include AU-space( margin-top, 1unit );
 
-  @media ( min-width: 338px )  {
-    button {
+    @media ( min-width: 361px )  {
       margin-top: 0;
     }
   }
+
 }
 
 
