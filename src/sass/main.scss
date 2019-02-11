@@ -9,7 +9,6 @@ $AU-color-foreground-action: #3c4858;
 $AU-color-foreground-focus: #e48ffc;
 //Main nav, set project specific breakpoint
 $AU-main-nav-breakpoint: sm;
-
 $AU-logo-width-sm: 16unit;
 
 
@@ -59,7 +58,7 @@ main > .au-body {
 }
 
 
-.label--block {
+.display--block {
   display: block;
 }
 
@@ -137,16 +136,33 @@ section {
 }
 
 
-
 .dna-search-input {
-  @include AU-space( margin-bottom, 1unit );
-  width:75%;
+  input {
+    @include AU-space( height, 4unit );
+    @include AU-space( width, 75% );
+    @include AU-space( margin-right, 0.5unit );
 
-	@media ( min-width: 338px ) {
-	  margin-bottom: 0;
-      width:62%;
-	}
+    @media (min-width: 338px) {
+      margin-bottom: 0;
 
+      @include AU-space( width, 62% );
+    }
+  }
+
+  .au-btn {
+    @include AU-space( margin-top, 1unit );
+    @include AU-space( height, 4unit );
+
+    @include AU-media( md )  {
+    margin-top: 0;
+    }
+  }
+
+  span {
+    @include AU-space( margin-bottom, 0.5unit );
+    @include AU-space( margin-top, 0unit );
+    color: #636363;
+  }
 
 }
 
@@ -157,7 +173,7 @@ section {
 
 .login-button {
 
-  @include AU-media(  sm ) {
+  @include AU-media( sm ) {
     float: right;
   }
 
