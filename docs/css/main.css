@@ -1563,15 +1563,15 @@ section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 @media (min-width: 992px) { .au-header { padding-bottom: 0; }
   .au-header [class^="col-md"] + [class^="col-md"] { margin-top: 0; } }
 
-.dna-search-input input { height: 64px; height: 4rem; width: 75%; margin-right: 8px; margin-right: 0.5rem; }
+.dna-search-wrapper input { height: 64px; height: 4rem; width: 75%; margin-right: 8px; margin-right: 0.5rem; }
 
-@media (min-width: 338px) { .dna-search-input input { margin-bottom: 0; width: 62%; } }
+@media (min-width: 338px) { .dna-search-wrapper input { margin-bottom: 0; width: 100%; } }
 
-.dna-search-input .au-btn { margin-top: 16px; margin-top: 1rem; height: 64px; height: 4rem; }
+.dna-search-wrapper .dna-search__button { margin-top: 16px; margin-top: 1rem; height: 64px; height: 4rem; }
 
-@media (min-width: 992px) { .dna-search-input .au-btn { margin-top: 0; } }
+@media (min-width: 547px) { .dna-search-wrapper .dna-search__button { margin-top: 0; } }
 
-.dna-search-input span { margin-bottom: 8px; margin-bottom: 0.5rem; margin-top: 0px; margin-top: 0rem; color: #636363; }
+.hint-text { margin-bottom: 8px; margin-bottom: 0.5rem; margin-top: 0px; margin-top: 0rem; color: #636363; display: block; }
 
 .label--large { margin-bottom: 24px; margin-bottom: 1.5rem; }
 

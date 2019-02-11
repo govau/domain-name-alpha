@@ -136,36 +136,37 @@ section {
 }
 
 
-.dna-search-input {
+.dna-search-wrapper {
   input {
-    @include AU-space( height, 4unit );
-    @include AU-space( width, 75% );
-    @include AU-space( margin-right, 0.5unit );
+    @include AU-space(height, 4unit);
+    @include AU-space(width, 75%);
+    @include AU-space(margin-right, 0.5unit);
 
     @media (min-width: 338px) {
       margin-bottom: 0;
 
-      @include AU-space( width, 62% );
+      @include AU-space(width, 100%);
     }
   }
 
-  .au-btn {
-    @include AU-space( margin-top, 1unit );
-    @include AU-space( height, 4unit );
+  .dna-search__button {
+    @include AU-space(margin-top, 1unit);
+    @include AU-space(height, 4unit);
 
-    @include AU-media( md )  {
-    margin-top: 0;
+    @media ( min-width: 547px )  {
+      margin-top: 0;
     }
   }
 
-  span {
-    @include AU-space( margin-bottom, 0.5unit );
-    @include AU-space( margin-top, 0unit );
-    color: #636363;
-  }
 
 }
 
+.hint-text {
+  @include AU-space( margin-bottom, 0.5unit );
+  @include AU-space( margin-top, 0unit );
+  color: $AU-color-foreground-muted;
+  display: block;
+}
 
 .label--large {
 	@include AU-space( margin-bottom, 1.5unit );
