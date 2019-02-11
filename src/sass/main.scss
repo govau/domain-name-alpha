@@ -139,23 +139,17 @@ section {
 .dna-search-wrapper {
   input {
     @include AU-space(height, 4unit);
-    @include AU-space(width, 75%);
+    @include AU-space(width, 65%);
     @include AU-space(margin-right, 0.5unit);
 
-    @media (min-width: 338px) {
-      margin-bottom: 0;
-
+    @media (max-width: 834px) {
+      @include AU-space(margin-bottom, 1unit);
       @include AU-space(width, 100%);
     }
   }
 
   .dna-search__button {
-    @include AU-space(margin-top, 1unit);
     @include AU-space(height, 4unit);
-
-    @media ( min-width: 547px )  {
-      margin-top: 0;
-    }
   }
 
 
@@ -163,7 +157,6 @@ section {
 
 .hint-text {
   @include AU-space( margin-bottom, 0.5unit );
-  @include AU-space( margin-top, 0unit );
   color: $AU-color-foreground-muted;
   display: block;
 }
