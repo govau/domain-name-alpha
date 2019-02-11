@@ -1537,7 +1537,7 @@ main > .au-body { padding: 32px 0; padding: 2rem 0; }
 
 .btn-cta-group .au-btn { margin-top: 16px; margin-top: 1rem; }
 
-.display--block { display: block; }
+.au-label { display: block; }
 
 footer nav + div { margin-top: 16px; margin-top: 1rem; }
 
@@ -1571,7 +1571,7 @@ section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 
 .hint-text { margin-bottom: 8px; margin-bottom: 0.5rem; color: #636363; display: block; }
 
-.label--large { margin-bottom: 24px; margin-bottom: 1.5rem; }
+.hint-text.hint-text--dark { color: #b0b5bb; }
 
 @media (min-width: 768px) { .login-button { float: right; } }
 
