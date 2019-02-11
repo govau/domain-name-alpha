@@ -58,8 +58,9 @@ main > .au-body {
 }
 
 
-.display--block {
+.au-label {
   display: block;
+
 }
 
 
@@ -159,11 +160,12 @@ section {
   @include AU-space( margin-bottom, 0.5unit );
   color: $AU-color-foreground-muted;
   display: block;
+
+  &.hint-text--dark {
+    color: $AU-colordark-foreground-muted;
+  }
 }
 
-.label--large {
-	@include AU-space( margin-bottom, 1.5unit );
-}
 
 .login-button {
 
