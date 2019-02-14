@@ -1563,7 +1563,7 @@ section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 @media (min-width: 992px) { .au-header { padding-bottom: 0; }
   .au-header [class^="col-md"] + [class^="col-md"] { margin-top: 0; } }
 
-.dna-search-wrapper input { height: 64px; height: 4rem; width: 65%; margin-right: 8px; margin-right: 0.5rem; }
+.dna-search-wrapper input { height: 64px; height: 4rem; width: 65%; margin-right: 8px; margin-right: 0.5rem; font-size: 20px; font-size: 1.25rem; line-height: 1.6; }
 
 @media (max-width: 834px) { .dna-search-wrapper input { margin-bottom: 16px; margin-bottom: 1rem; width: 100%; } }
 
